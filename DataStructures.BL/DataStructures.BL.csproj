@@ -42,6 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stack\ArrayStack.cs" />
+    <Compile Include="Stack\EasyStack.cs" />
+    <Compile Include="Stack\ItemStack.cs" />
+    <Compile Include="Stack\LinkedStack.cs" />
+    <Compile Include="Stack\StackRun.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataStructures.BL.Stack;
+using System;
 
 namespace DataStructures.UI
 {
@@ -10,6 +7,9 @@ namespace DataStructures.UI
     {
         static void Main(string[] args)
         {
+            var stackRun = new StackRun();
+
+            Console.ReadLine();
         }
     }
 }
