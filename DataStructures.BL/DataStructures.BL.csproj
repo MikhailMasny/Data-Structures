@@ -42,6 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queue\ArrayQueue.cs" />
+    <Compile Include="Queue\DuplexItem.cs" />
+    <Compile Include="Queue\DuplexLinkedDeque.cs" />
+    <Compile Include="Queue\EasyDeque.cs" />
+    <Compile Include="Queue\EasyQueue.cs" />
+    <Compile Include="Queue\ItemQueue.cs" />
+    <Compile Include="Queue\LinkedQueue.cs" />
+    <Compile Include="Queue\QueueRun.cs" />
     <Compile Include="Stack\ArrayStack.cs" />
     <Compile Include="Stack\EasyStack.cs" />
     <Compile Include="Stack\ItemStack.cs" />

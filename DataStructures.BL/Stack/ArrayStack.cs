@@ -33,7 +33,7 @@ namespace DataStructures.BL.Stack
         /// <summary>
         /// Базовый конструктор.
         /// </summary>
-        /// <param name="size">Размер массива.</param>
+        /// <param name="size">Размер.</param>
         public ArrayStack(int size = 10)
         {
             items = new T[size];
@@ -44,7 +44,7 @@ namespace DataStructures.BL.Stack
         /// Конструтор с доп. параметрами.
         /// </summary>
         /// <param name="data">Данные.</param>
-        /// <param name="size">Размер массива.</param>
+        /// <param name="size">Размер.</param>
         public ArrayStack(T data, int size = 10) : this(size)
         {
             items[0] = data;

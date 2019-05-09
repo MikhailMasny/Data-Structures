@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace DataStructures.BL.Stack
 {
+    /// <summary>
+    /// Класс с вариантами Stack.
+    /// </summary>
     public class StackRun
     {
         /// <summary>
@@ -12,12 +15,18 @@ namespace DataStructures.BL.Stack
         {
             var stack = new Stack<int>();
 
+            Console.WriteLine($"BasicStack - count: {stack.Count}");
+
             stack.Push(11);
             stack.Push(22);
             stack.Push(33);
 
+            Console.WriteLine($"BasicStack - count: {stack.Count}");
+
             Console.WriteLine($"BasicStack - pop item: {stack.Pop()}");
             Console.WriteLine($"BasicStack - peek item: {stack.Peek()}");
+
+            Console.WriteLine($"BasicStack - count: {stack.Count}");
         }
 
         /// <summary>
@@ -27,12 +36,18 @@ namespace DataStructures.BL.Stack
         {
             var easyStack = new EasyStack<int>();
 
+            Console.WriteLine($"EasyStack - count: {easyStack.Count}");
+
             easyStack.Push(1);
             easyStack.Push(2);
             easyStack.Push(3);
 
+            Console.WriteLine($"EasyStack - count: {easyStack.Count}");
+
             Console.WriteLine($"EasyStack - pop item: {easyStack.Pop()}");
             Console.WriteLine($"EasyStack - peek item: {easyStack.Peek()}");
+
+            Console.WriteLine($"EasyStack - count: {easyStack.Count}");
         }
 
         /// <summary>
@@ -42,14 +57,20 @@ namespace DataStructures.BL.Stack
         {
             var linkedStack = new LinkedStack<int>();
 
+            Console.WriteLine($"LinkedStack - count: {linkedStack.Count}");
+
             linkedStack.Push(4);
             linkedStack.Push(5);
             linkedStack.Push(6);
+
+            Console.WriteLine($"LinkedStack - count: {linkedStack.Count}");
 
             Console.WriteLine($"LinkedStack - peek item: {linkedStack.Peek()}");
             Console.WriteLine($"LinkedStack - pop item: {linkedStack.Pop()}");
             Console.WriteLine($"LinkedStack - pop item: {linkedStack.Pop()}");
             Console.WriteLine($"LinkedStack - peek item: {linkedStack.Peek()}");
+
+            Console.WriteLine($"LinkedStack - count: {linkedStack.Count}");
         }
 
         /// <summary>
@@ -72,6 +93,8 @@ namespace DataStructures.BL.Stack
             Console.WriteLine($"ArrayStack - pop item: {arrayStack.Pop()}");
             Console.WriteLine($"ArrayStack - pop item: {arrayStack.Pop()}");
             Console.WriteLine($"ArrayStack - peek item: {arrayStack.Peek()}");
+
+            Console.WriteLine($"ArrayStack - count: {arrayStack.Count}");
         }
     }
 }
