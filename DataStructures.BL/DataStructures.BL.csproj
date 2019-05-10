@@ -50,6 +50,8 @@
     <Compile Include="Queue\ItemQueue.cs" />
     <Compile Include="Queue\LinkedQueue.cs" />
     <Compile Include="Queue\QueueRun.cs" />
+    <Compile Include="Set\EasySet.cs" />
+    <Compile Include="Set\SetRun.cs" />
     <Compile Include="Stack\ArrayStack.cs" />
     <Compile Include="Stack\EasyStack.cs" />
     <Compile Include="Stack\ItemStack.cs" />
