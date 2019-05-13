@@ -8,6 +8,9 @@ namespace DataStructures.BL.Queue
     /// </summary>
     public class QueueRun
     {
+        /// <summary>
+        /// Демонстрация работы базового Queue.
+        /// </summary>
         public void BasicQueue()
         {
             var queue = new Queue<int>();

@@ -19,7 +19,7 @@
         /// <summary>
         /// Конструктор.
         /// </summary>
-        /// <param name="data">Обобщение.</param>
+        /// <param name="data">Данные.</param>
         public ItemQueue(T data)
         {
             Data = data;

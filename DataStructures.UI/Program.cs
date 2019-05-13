@@ -1,4 +1,5 @@
-﻿using DataStructures.BL.Queue;
+﻿using DataStructures.BL.HashTable;
+using DataStructures.BL.Queue;
 using DataStructures.BL.Set;
 using DataStructures.BL.Stack;
 using System;
@@ -14,6 +15,7 @@ namespace DataStructures.UI
             var stackRun = new StackRun();
             var queueRun = new QueueRun();
             var setRun = new SetRun();
+            var hashtableRun = new HashTableRun();
 
             Console.ReadLine();
         }
