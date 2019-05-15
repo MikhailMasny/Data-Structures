@@ -4,17 +4,29 @@ using System.Collections.Generic;
 
 namespace DataStructures.BL.Map
 {
+    /// <summary>
+    /// Словарь на основе Map.
+    /// </summary>
+    /// <typeparam name="TKey">Ключ.</typeparam>
+    /// <typeparam name="TValue">Значение.</typeparam>
     class Dictionary<TKey, TValue> : IEnumerable
     {
         private int size = 100;
         private ItemMap<TKey, TValue>[] Items;
         private List<TKey> Keys = new List<TKey>();
 
+        /// <summary>
+        /// Пустой конструктор.
+        /// </summary>
         public Dictionary()
         {
             Items = new ItemMap<TKey, TValue>[size];
         }
 
+        /// <summary>
+        /// Добавить новый элемент.
+        /// </summary>
+        /// <param name="item">Элемент.</param>
         public void Add(ItemMap<TKey, TValue> item)
         {
             var hash = GetHash(item.Key);
@@ -74,17 +86,10 @@ namespace DataStructures.BL.Map
             }
         }
 
-        public IEnumerator GetEnumerator()
-        {
-            foreach (var item in Items)
-            {
-                if (item != null)
-                {
-                    yield return item;
-                }
-            }
-        }
-
+        /// <summary>
+        /// Удалить элемент.
+        /// </summary>
+        /// <param name="key">Ключ.</param>
         public void Remove(TKey key)
         {
             var hash = GetHash(key);
@@ -152,6 +157,11 @@ namespace DataStructures.BL.Map
             }
         }
 
+        /// <summary>
+        /// Поиск элемента.
+        /// </summary>
+        /// <param name="key">Ключ.</param>
+        /// <returns>Результат поиска.</returns>
         public TValue Search(TKey key)
         {
             var hash = GetHash(key);
@@ -217,6 +227,17 @@ namespace DataStructures.BL.Map
         private int GetHash(TKey key)
         {
             return key.GetHashCode() % size;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            foreach (var item in Items)
+            {
+                if (item != null)
+                {
+                    yield return item;
+                }
+            }
         }
     }
 }

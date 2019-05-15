@@ -4,18 +4,33 @@ using System.Linq;
 
 namespace DataStructures.BL.Map
 {
+    /// <summary>
+    /// Простой Map.
+    /// </summary>
+    /// <typeparam name="TKey"></typeparam>
+    /// <typeparam name="TValue"></typeparam>
     class EasyMap<TKey, TValue> : IEnumerable
     {
         private List<ItemMap<TKey, TValue>> Items = new List<ItemMap<TKey, TValue>>();
         private List<TKey> Keys = new List<TKey>();
 
+        /// <summary>
+        /// Количество элементов.
+        /// </summary>
         public int Count => Items.Count;
 
+        /// <summary>
+        /// Пустой конструктор.
+        /// </summary>
         public EasyMap()
         {
 
         }
 
+        /// <summary>
+        /// Добавление нового элемента.
+        /// </summary>
+        /// <param name="item">Элемент.</param>
         public void Add(ItemMap<TKey, TValue> item)
         {
             if (!Keys.Contains(item.Key))
@@ -25,6 +40,11 @@ namespace DataStructures.BL.Map
             }
         }
 
+        /// <summary>
+        /// Поиск элемента.
+        /// </summary>
+        /// <param name="key">Ключ.</param>
+        /// <returns>Результат поиска.</returns>
         public TValue Search(TKey key)
         {
             if (Keys.Contains(key))
@@ -35,6 +55,10 @@ namespace DataStructures.BL.Map
             return default(TValue);
         }
 
+        /// <summary>
+        /// Удалить элемент.
+        /// </summary>
+        /// <param name="key">Ключ.</param>
         public void Remove(TKey key)
         {
             if (Keys.Contains(key))
