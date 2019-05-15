@@ -47,6 +47,9 @@
     <Compile Include="HashTable\HelpHashTable.cs" />
     <Compile Include="HashTable\ItemHashTable.cs" />
     <Compile Include="HashTable\SuperHashTable.cs" />
+    <Compile Include="Map\Dictionary.cs" />
+    <Compile Include="Map\EasyMap.cs" />
+    <Compile Include="Map\ItemMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queue\ArrayQueue.cs" />
     <Compile Include="Queue\DuplexItem.cs" />
