@@ -1,4 +1,5 @@
 ﻿using DataStructures.BL.HashTable;
+using DataStructures.BL.Map;
 using DataStructures.BL.Queue;
 using DataStructures.BL.Set;
 using DataStructures.BL.Stack;
@@ -16,6 +17,7 @@ namespace DataStructures.UI
             var queueRun = new QueueRun();
             var setRun = new SetRun();
             var hashtableRun = new HashTableRun();
+            var mapRun = new MapRun();
 
             Console.ReadLine();
         }

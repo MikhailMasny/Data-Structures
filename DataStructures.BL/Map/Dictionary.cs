@@ -9,7 +9,7 @@ namespace DataStructures.BL.Map
     /// </summary>
     /// <typeparam name="TKey">Ключ.</typeparam>
     /// <typeparam name="TValue">Значение.</typeparam>
-    class Dictionary<TKey, TValue> : IEnumerable
+    class ImplementedDictionary<TKey, TValue> : IEnumerable
     {
         private int size = 100;
         private ItemMap<TKey, TValue>[] Items;
@@ -18,7 +18,7 @@ namespace DataStructures.BL.Map
         /// <summary>
         /// Пустой конструктор.
         /// </summary>
-        public Dictionary()
+        public ImplementedDictionary()
         {
             Items = new ItemMap<TKey, TValue>[size];
         }

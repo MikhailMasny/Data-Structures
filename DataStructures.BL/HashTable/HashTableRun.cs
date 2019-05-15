@@ -16,7 +16,6 @@ namespace DataStructures.BL.HashTable
         public void BasicHashTable()
         {
             Hashtable ht = new Hashtable();
-            
 
             Console.WriteLine($"BasicHashTable - count: {ht.Count}");
 
