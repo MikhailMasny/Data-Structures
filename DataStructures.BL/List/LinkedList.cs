@@ -6,7 +6,7 @@ namespace DataStructures.BL.List
     /// Односвязный список.
     /// </summary>
     /// <typeparam name="T">Обобщение.</typeparam>
-    public class LinkedList<T> : IEnumerable
+    public class ImplementedLinkedList<T> : IEnumerable
     {
         /// <summary>
         /// Головной элемент.
@@ -26,7 +26,7 @@ namespace DataStructures.BL.List
         /// <summary>
         /// Конструктор.
         /// </summary>
-        public LinkedList()
+        public ImplementedLinkedList()
         {
             Clear();
         }
@@ -35,7 +35,7 @@ namespace DataStructures.BL.List
         /// Конструктор с данными.
         /// </summary>
         /// <param name="data">Данные.</param>
-        public LinkedList(T data)
+        public ImplementedLinkedList(T data)
         {
             SetHeadAndTail(data);
         }

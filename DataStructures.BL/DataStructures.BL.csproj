@@ -52,6 +52,7 @@
     <Compile Include="List\DuplexLinkedList.cs" />
     <Compile Include="List\ItemList.cs" />
     <Compile Include="List\LinkedList.cs" />
+    <Compile Include="List\ListRun.cs" />
     <Compile Include="Map\Dictionary.cs" />
     <Compile Include="Map\EasyMap.cs" />
     <Compile Include="Map\ItemMap.cs" />
