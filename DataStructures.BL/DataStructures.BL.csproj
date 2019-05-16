@@ -47,6 +47,11 @@
     <Compile Include="HashTable\HelpHashTable.cs" />
     <Compile Include="HashTable\ItemHashTable.cs" />
     <Compile Include="HashTable\SuperHashTable.cs" />
+    <Compile Include="List\CircularLinkedList.cs" />
+    <Compile Include="List\DuplexItemList.cs" />
+    <Compile Include="List\DuplexLinkedList.cs" />
+    <Compile Include="List\ItemList.cs" />
+    <Compile Include="List\LinkedList.cs" />
     <Compile Include="Map\Dictionary.cs" />
     <Compile Include="Map\EasyMap.cs" />
     <Compile Include="Map\ItemMap.cs" />
