@@ -9,22 +9,22 @@ namespace DataStructures.BL.List
     public class LinkedList<T> : IEnumerable
     {
         /// <summary>
-        /// Первый элемент списка
+        /// Головной элемент.
         /// </summary>
         public ItemList<T> Head { get; private set; }
 
         /// <summary>
-        /// Последний элемент списка
+        /// Последний элемент.
         /// </summary>
         public ItemList<T> Tail { get; private set; }
 
         /// <summary>
-        /// Количество элементов в списке
+        /// Количество элементов.
         /// </summary>
         public int Count { get; private set; }
 
         /// <summary>
-        /// Создать пустой список
+        /// Конструктор.
         /// </summary>
         public LinkedList()
         {
@@ -32,18 +32,18 @@ namespace DataStructures.BL.List
         }
 
         /// <summary>
-        /// Создать список с начальным элементом
+        /// Конструктор с данными.
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">Данные.</param>
         public LinkedList(T data)
         {
             SetHeadAndTail(data);
         }
 
         /// <summary>
-        /// Добавить данные в конец списка
+        /// Добавить новый элемент.
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">Данные.</param>
         public void Add(T data)
         {
             if (Tail != null)
@@ -60,9 +60,9 @@ namespace DataStructures.BL.List
         }
 
         /// <summary>
-        /// Удалить первое вхождение данных в список
+        /// Удалить элемент.
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">Данные.</param>
         public void Delete(T data)
         {
             if (Head != null)
@@ -97,9 +97,9 @@ namespace DataStructures.BL.List
         }
 
         /// <summary>
-        /// Добавить данные в начала списка
+        /// Добавить элемент в начало.
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="data">Данные.</param>
         public void AppendHead(T data)
         {
             var item = new ItemList<T>(data)
@@ -112,10 +112,10 @@ namespace DataStructures.BL.List
         }
 
         /// <summary>
-        /// Вставить данные после искомого значения
+        /// Добавить элемент в конец.
         /// </summary>
-        /// <param name="target"></param>
-        /// <param name="data"></param>
+        /// <param name="target">Цель.</param>
+        /// <param name="data">Данные.</param>
         public void InsertAfter(T target, T data)
         {
             if (Head != null)
@@ -145,7 +145,7 @@ namespace DataStructures.BL.List
         }
 
         /// <summary>
-        /// Очистить список
+        /// Очистить список.
         /// </summary>
         public void Clear()
         {
@@ -176,9 +176,13 @@ namespace DataStructures.BL.List
             }
         }
 
+        /// <summary>
+        /// Переопределение ToString.
+        /// </summary>
+        /// <returns>Возвращение нового ToString.</returns>
         public override string ToString()
         {
-            return "Linked List " + Count + " элементов";
+            return "Linked List " + Count + " elements.";
         }
     }
 }

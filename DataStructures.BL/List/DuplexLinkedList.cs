@@ -4,14 +4,36 @@ using System.Collections.Generic;
 
 namespace DataStructures.BL.List
 {
+    /// <summary>
+    /// Элемент двусвязного списка.
+    /// </summary>
+    /// <typeparam name="T">Обобщение.</typeparam>
     public class DuplexLinkedList<T> : IEnumerable<T>
     {
+        /// <summary>
+        /// Головной элемент.
+        /// </summary>
         public DuplexItemList<T> Head { get; set; }
+
+        /// <summary>
+        /// Последний элемент.
+        /// </summary>
         public DuplexItemList<T> Tail { get; set; }
+
+        /// <summary>
+        /// Количество элементов.
+        /// </summary>
         public int Count { get; set; }
 
+        /// <summary>
+        /// Пустой конструктор.
+        /// </summary>
         public DuplexLinkedList() { }
 
+        /// <summary>
+        /// Конструктор.
+        /// </summary>
+        /// <param name="data">Данные.</param>
         public DuplexLinkedList(T data)
         {
             var item = new DuplexItemList<T>(data);
@@ -20,6 +42,10 @@ namespace DataStructures.BL.List
             Count = 1;
         }
 
+        /// <summary>
+        /// Добавить новый элемент.
+        /// </summary>
+        /// <param name="data">Данные.</param>
         public void Add(T data)
         {
 
@@ -40,6 +66,10 @@ namespace DataStructures.BL.List
             Count++;
         }
 
+        /// <summary>
+        /// Удалить новый элемент.
+        /// </summary>
+        /// <param name="data">Данные.</param>
         public void Delete(T data)
         {
             var current = Head;
@@ -58,6 +88,10 @@ namespace DataStructures.BL.List
             }
         }
 
+        /// <summary>
+        /// Реверс элементов.
+        /// </summary>
+        /// <returns>Результат реверса.</returns>
         public DuplexLinkedList<T> Reverse()
         {
             var result = new DuplexLinkedList<T>();

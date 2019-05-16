@@ -2,18 +2,40 @@
 
 namespace DataStructures.BL.List
 {
+    /// <summary>
+    /// Цикличный двусвязный список.
+    /// </summary>
+    /// <typeparam name="T">Обобщение.</typeparam>
     public class CircularLinkedList<T> : IEnumerable
     {
+        /// <summary>
+        /// Головной элемент.
+        /// </summary>
         public DuplexItemList<T> Head { get; set; }
+
+        /// <summary>
+        /// Количество элементов.
+        /// </summary>
         public int Count { get; set; }
 
+        /// <summary>
+        /// Пустой конструктор.
+        /// </summary>
         public CircularLinkedList() { }
 
+        /// <summary>
+        /// Конструктор.
+        /// </summary>
+        /// <param name="data">Обобщение.</param>
         public CircularLinkedList(T data)
         {
             SetHeadItem(data);
         }
 
+        /// <summary>
+        /// Добавить новый элемент.
+        /// </summary>
+        /// <param name="data">Данные.</param>
         public void Add(T data)
         {
             if (Count == 0)
@@ -30,6 +52,10 @@ namespace DataStructures.BL.List
             Count++;
         }
 
+        /// <summary>
+        /// Удалить элемент.
+        /// </summary>
+        /// <param name="data">Данные.</param>
         public void Delete(T data)
         {
             if (Head.Data.Equals(data))
