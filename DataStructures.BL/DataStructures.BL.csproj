@@ -47,6 +47,7 @@
     <Compile Include="HashTable\HelpHashTable.cs" />
     <Compile Include="HashTable\ItemHashTable.cs" />
     <Compile Include="HashTable\SuperHashTable.cs" />
+    <Compile Include="Heap\Heap.cs" />
     <Compile Include="List\CircularLinkedList.cs" />
     <Compile Include="List\DuplexItemList.cs" />
     <Compile Include="List\DuplexLinkedList.cs" />
