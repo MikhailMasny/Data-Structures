@@ -4,9 +4,9 @@
     /// Дерево (Tree).
     /// </summary>
     /// <typeparam name="T">Обобщение.</typeparam>
-    public class Tree<T>
+    public class ImplementedTree<T>
     {
-        private Node<T> root;
+        private ImplementedNode<T> root;
 
         /// <summary>
         /// Количество.
@@ -16,9 +16,9 @@
         /// <summary>
         /// Конструктор.
         /// </summary>
-        public Tree()
+        public ImplementedTree()
         {
-            root = new Node<T>('\0', default(T), "");
+            root = new ImplementedNode<T>('\0', default(T), "");
             Count = 1;
         }
 
@@ -32,7 +32,7 @@
             AddNode(key, data, root);
         }
 
-        private void AddNode(string key, T data, Node<T> node)
+        private void AddNode(string key, T data, ImplementedNode<T> node)
         {
             if (string.IsNullOrEmpty(key))
             {
@@ -52,7 +52,7 @@
                 }
                 else
                 {
-                    var newNode = new Node<T>(key[0], data, node.Prefix + key[0]);
+                    var newNode = new ImplementedNode<T>(key[0], data, node.Prefix + key[0]);
                     node.SubNodes.Add(key[0], newNode);
                     AddNode(key.Substring(1), data, newNode);
                 }
@@ -74,7 +74,7 @@
         /// </summary>
         /// <param name="key">Ключ.</param>
         /// <param name="node">Узел.</param>
-        private void RemoveNode(string key, Node<T> node)
+        private void RemoveNode(string key, ImplementedNode<T> node)
         {
             if (string.IsNullOrEmpty(key))
             {
@@ -111,7 +111,7 @@
         /// <param name="node">Ухел.</param>
         /// <param name="value">Значение.</param>
         /// <returns></returns>
-        private bool SearchNode(string key, Node<T> node, out T value)
+        private bool SearchNode(string key, ImplementedNode<T> node, out T value)
         {
             value = default(T);
             var result = false;

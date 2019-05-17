@@ -6,7 +6,7 @@ namespace DataStructures.BL.Tree
     /// Элемент Tree (Узел).
     /// </summary>
     /// <typeparam name="T">Обобщение.</typeparam>
-    public class Node<T>
+    public class ImplementedNode<T>
     {
         /// <summary>
         /// Символ.
@@ -31,7 +31,7 @@ namespace DataStructures.BL.Tree
         /// <summary>
         /// Под узел.
         /// </summary>
-        public Dictionary<char, Node<T>> SubNodes { get; set; }
+        public Dictionary<char, ImplementedNode<T>> SubNodes { get; set; }
 
         /// <summary>
         /// Конструктор.
@@ -39,11 +39,11 @@ namespace DataStructures.BL.Tree
         /// <param name="symbol">Символ.</param>
         /// <param name="data">Данные.</param>
         /// <param name="prefix">Префикс.</param>
-        public Node(char symbol, T data, string prefix)
+        public ImplementedNode(char symbol, T data, string prefix)
         {
             Symbol = symbol;
             Data = data;
-            SubNodes = new Dictionary<char, Node<T>>();
+            SubNodes = new Dictionary<char, ImplementedNode<T>>();
             Prefix = prefix;
         }
 
@@ -57,9 +57,9 @@ namespace DataStructures.BL.Tree
         /// </summary>
         /// <param name="symbol">Символ.</param>
         /// <returns></returns>
-        public Node<T> TryFind(char symbol)
+        public ImplementedNode<T> TryFind(char symbol)
         {
-            if (SubNodes.TryGetValue(symbol, out Node<T> value))
+            if (SubNodes.TryGetValue(symbol, out ImplementedNode<T> value))
             {
                 return value;
             }
@@ -71,7 +71,7 @@ namespace DataStructures.BL.Tree
 
         public override bool Equals(object obj)
         {
-            if (obj is Node<T> item)
+            if (obj is ImplementedNode<T> item)
             {
                 return Data.Equals(item);
             }

@@ -75,6 +75,7 @@
     <Compile Include="Stack\StackRun.cs" />
     <Compile Include="Tree\Node.cs" />
     <Compile Include="Tree\Tree.cs" />
+    <Compile Include="Tree\TreeRun.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
