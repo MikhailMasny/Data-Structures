@@ -22,7 +22,7 @@ namespace DataStructures.BL.Tree
         }
 
         /// <summary>
-        /// Демонстрация работы Tree.
+        /// Демонстрация работы ImplementedTree.
         /// </summary>
         public void ImplementedTree()
         {

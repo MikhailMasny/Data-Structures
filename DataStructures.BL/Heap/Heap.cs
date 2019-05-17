@@ -6,7 +6,7 @@ namespace DataStructures.BL.Heap
     /// <summary>
     /// Куча (Heap).
     /// </summary>
-    class Heap : IEnumerable
+    public class ImplementedHeap : IEnumerable
     {
         private List<int> items = new List<int>();
 
@@ -18,13 +18,13 @@ namespace DataStructures.BL.Heap
         /// <summary>
         /// Пустой конструктор.
         /// </summary>
-        public Heap() { }
+        public ImplementedHeap() { }
 
         /// <summary>
         /// Конструктор.
         /// </summary>
         /// <param name="items">Элементы.</param>
-        public Heap(List<int> items)
+        public ImplementedHeap(List<int> items)
         {
             this.items.AddRange(items);
             for (int i = Count; i >= 0; i--)

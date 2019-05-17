@@ -5,6 +5,7 @@ using DataStructures.BL.Queue;
 using DataStructures.BL.Set;
 using DataStructures.BL.Stack;
 using DataStructures.BL.Tree;
+using DataStructures.BL.Heap;
 using System;
 
 // TODO: Реализовать через while вызов всех возможных структур.
@@ -22,6 +23,7 @@ namespace DataStructures.UI
             var mapRun = new MapRun();
             var listRun = new ListRun();
             var treeRun = new TreeRun();
+            var heapRun = new HeapRun();
 
             Console.ReadLine();
         }
