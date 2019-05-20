@@ -44,6 +44,9 @@
     <Compile Include="BinarySearchTree\BinarySearchTreeRun.cs" />
     <Compile Include="BinarySearchTree\Node.cs" />
     <Compile Include="BinarySearchTree\Tree.cs" />
+    <Compile Include="Graph\Edge.cs" />
+    <Compile Include="Graph\Graph.cs" />
+    <Compile Include="Graph\Vertex.cs" />
     <Compile Include="HashTable\BadHashTable.cs" />
     <Compile Include="HashTable\HashTable.cs" />
     <Compile Include="HashTable\HashTableRun.cs" />

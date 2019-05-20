@@ -47,6 +47,10 @@ namespace DataStructures.BL.Tree
             Prefix = prefix;
         }
 
+        /// <summary>
+        /// Переопределение ToString.
+        /// </summary>
+        /// <returns>Определенного вида строка.</returns>
         public override string ToString()
         {
             return $"{Data} [{SubNodes.Count}] ({Prefix})";
@@ -69,6 +73,11 @@ namespace DataStructures.BL.Tree
             }
         }
 
+        /// <summary>
+        /// Сравнение элементов.
+        /// </summary>
+        /// <param name="obj">Объект.</param>
+        /// <returns>Результат сравнения.</returns>
         public override bool Equals(object obj)
         {
             if (obj is ImplementedNode<T> item)
