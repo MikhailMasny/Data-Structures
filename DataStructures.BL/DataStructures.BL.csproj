@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinarySearchTree\Node.cs" />
+    <Compile Include="BinarySearchTree\Tree.cs" />
     <Compile Include="HashTable\BadHashTable.cs" />
     <Compile Include="HashTable\HashTable.cs" />
     <Compile Include="HashTable\HashTableRun.cs" />
