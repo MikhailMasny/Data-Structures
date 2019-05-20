@@ -78,7 +78,7 @@ namespace DataStructures.BL.Graph
 
         private static void GetMatrix(Graph graph)
         {
-            Console.WriteLine("Matrix: \n");
+            Console.WriteLine("Matrix:");
 
             int[,] matrix = graph.GetMatrix();
             for (int i = 0; i < graph.VertexCount; i++)

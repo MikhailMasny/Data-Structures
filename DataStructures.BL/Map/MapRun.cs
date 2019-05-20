@@ -58,7 +58,7 @@ namespace DataStructures.BL.Map
 
             easyMap.Remove(guid);
 
-            Console.WriteLine($"BasicDictionary - count after delete: {easyMap.Count}");
+            Console.WriteLine($"EasyMap - count after delete: {easyMap.Count}");
 
             int i = 1;
             foreach (var item in easyMap)

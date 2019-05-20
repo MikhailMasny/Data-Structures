@@ -52,6 +52,8 @@ namespace DataStructures.BL.BinarySearchTree
             {
                 Console.Write($"{item} ");
             }
+
+            Console.WriteLine();
         }
     }
 }

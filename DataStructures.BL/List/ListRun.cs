@@ -130,7 +130,7 @@ namespace DataStructures.BL.List
 
             var reverse = duplexList.Reverse();
 
-            Console.WriteLine("After Reverse..");
+            Console.WriteLine("\nAfter Reverse..\n");
             foreach (var item in reverse)
             {
                 Console.WriteLine($"DuplexLinkedList - Item: {item}");
@@ -164,12 +164,5 @@ namespace DataStructures.BL.List
                 Console.WriteLine($"CircularLinkedList - Item: {item}");
             }
         }
-
-
-
-
-
-
-
     }
 }
