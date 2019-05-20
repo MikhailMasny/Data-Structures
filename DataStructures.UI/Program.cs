@@ -8,6 +8,7 @@ using DataStructures.BL.Tree;
 using DataStructures.BL.Heap;
 using System;
 using DataStructures.BL.BinarySearchTree;
+using DataStructures.BL.Graph;
 
 // TODO: Реализовать через while вызов всех возможных структур.
 
@@ -26,6 +27,7 @@ namespace DataStructures.UI
             var treeRun = new TreeRun();
             var heapRun = new HeapRun();
             var binarySearchTree = new BinarySearchTreeRun();
+            var graphRun = new GraphRun();
 
             Console.ReadLine();
         }
