@@ -392,6 +392,8 @@ namespace DataStructures.UI
 
         static void Main(string[] args)
         {
+            Console.Title = "Guids and implementation examples for all types of Data Structures v1.0";
+
             var stackRun = new StackRun();
             var queueRun = new QueueRun();
             var setRun = new SetRun();
